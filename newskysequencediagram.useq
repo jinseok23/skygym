@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.skygym.detailview.controller.InsertCommentServlet" project="NewSky" 
+    file="/NewSky/src/com/skygym/detailview/controller/InsertCommentServlet.java" binary="false" 
+    label="insertCommentServlet" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="323" y="0"/>    
+    <execution id="2">      
+      <position height="182" width="151" x="157" y="78"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="21" width="7" x="229" y="155"/>    
+    </execution>  
+  </object>  
+  <object id="6" language="java" name="com.skygym.detailview.controller.UpdateCommentServlet" project="NewSky" 
+    file="/NewSky/src/com/skygym/detailview/controller/UpdateCommentServlet.java" binary="false" 
+    label="updateCommentServlet" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="323" y="0"/>    
+    <execution id="7">      
+      <position height="189" width="158" x="312" y="228"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="7" x="388" y="312"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="com.skygym.detailview.controller.DeleteCommentServlet" project="NewSky" 
+    file="/NewSky/src/com/skygym/detailview/controller/DeleteCommentServlet.java" binary="false" 
+    label="deleteCommentServlet" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="323" y="0"/>    
+    <execution id="12">      
+      <position height="189" width="154" x="474" y="441"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="7" x="548" y="525"/>    
+    </execution>  
+  </object>  
+  <object id="16" language="java" name="com.skygym.detailview.model.service.DetailService" project="NewSky" 
+    file="/NewSky/src/com/skygym/detailview/model/service/DetailService.java" binary="false" label="detailService" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="895" y="0"/>    
+    <execution id="4">      
+      <position height="140" width="169" x="805" y="99"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="63" width="7" x="886" y="134"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="147" width="169" x="805" y="249"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="63" width="7" x="886" y="291"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="147" width="169" x="805" y="462"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="63" width="7" x="886" y="504"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="com.skygym.detailview.model.dao.DetailDao" project="NewSky" 
+    file="/NewSky/src/com/skygym/detailview/model/dao/DetailDao.java" binary="false" label="detailDao" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="1160" y="0"/>    
+    <execution id="18">      
+      <position height="98" width="153" x="978" y="120"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="105" width="153" x="978" y="270"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="105" width="153" x="978" y="483"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="insertComment(com.skygym.detailview.model.vo.GYMReply):int" asynchronous="false" x="397" 
+    y="81">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="8" operation="updateComment(com.skygym.detailview.model.vo.GYMReply):int" asynchronous="false">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="13" operation="deleteComment(int):int" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="17" operation="insertComment(java.sql.Connection,com.skygym.detailview.model.vo.GYMReply):int" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="20" asynchronous="false">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="21" operation="updateComment(java.sql.Connection,com.skygym.detailview.model.vo.GYMReply):int" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="24" asynchronous="false">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="25" operation="deleteComment(java.sql.Connection,int):int" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="28" asynchronous="false">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="30" asynchronous="false">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="31" asynchronous="false">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="32" asynchronous="false">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>
+</sequence-diagram>

@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+	
+	
+	#rankinglist_category
+	{
+		position : relative;
+		width:600px;
+		margin: 0 auto;
+		padding-bottom:50px;
+	}
+	.ranking-box{
+		display:inline-table;
+		width:300px;
+		overflow:hidden;
+		text-align: center;
+	}
+	.ranking-box-title
+	{
+		padding:10px 0;
+		font-weight:bold;
+		color:#494848;
+		font-family : 'Noto sans', sans-serif !important;
+		text-align:center;
+		font-size:28px;
+	}
+  	.ranking_box_sub_title
+  	{
+  		padding : 10px 0;
+  		font-size: 15px;
+  		font-weight: bold;
+  		color: #5b5c5c;
+  	}
+  	.ranking-list
+  	{
+  		clear:both;
+  		overflow:hidden;
+  		padding: 20px 10px 15px 10px;
+  		background : #fff;
+  		border-right: 1px solid #ddd;
+  		border-left : 1px solid #ddd;
+  		border-bottom : 1px solid #ddd;
+  	}
+  	.ranking-list-thumb{
+	min-height: 95px;
+	float:left;
+	overflow:hidden;
+	}
+	.ranking-list-thumb img{
+	width: 80px;
+	height:90px;
+	padding-top : 25px;
+	max-height: 100%;
+	}
+	.ranking-list-num{
+	float: left;
+	padding: 5px 0;
+	margin: -15px 0 0 -80px;
+	background: transparent;
+	color: #b43736;
+	font-size: 15px;
+	font-weight: bold;
+	min-width: 26px;
+	text-align: center;
+	z-index: 100;			
+	}
+	.ranking-list-text{
+	float:left;
+	padding: 5px 0 0 5px;
+	width: 170px;
+	word-break:break-all;
+	font-size:14px;
+	}
+	.ranking-list-brand{
+	clear:both;
+	width: 100%;
+	border-bottom:#ddd 1px solid;
+	padding-bottom:5px;
+	overflow:hidden;
+	
+	}
+	.ranking-list-brand-name{
+	float: left;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;	
+	text-align: left;
+	}
+	.ranking_list_link {
+	font-size: 12px;
+	float: right;
+	margin-top: 3px;
+	}
+	.ranking-list-item{
+	clear:both;
+	font-size:13px;
+	padding-top:5px;
+	text-align: left;
+	}
+	
+	.ranking-list-score
+	{
+		float:left;
+		color:red;
+		margin-right:50px;
+	}
